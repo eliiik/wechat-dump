@@ -15,7 +15,8 @@ TYPE_VOIP = 50
 TYPE_WX_VIDEO = 62  # video took by wechat
 TYPE_SYSTEM = 10000
 TYPE_CUSTOM_EMOJI = 1048625
-TYPE_REDENVELOPE = 436207665
+# TYPE_REDENVELOPE = 436207665
+#TYPE_SHOOPINGBILL = 318767153
 TYPE_LOCATION_SHARING = -1879048186
 TYPE_APP_MSG = 16777265
 
@@ -86,14 +87,17 @@ class WeChatMsg(object):
             return "REQUEST VIDEO CHAT"
         elif self.type == TYPE_LOCATION_SHARING:
             return "LOCATION SHARING"
+        # elif self.type == TYPE_SHOOPINGBILL:
+        #     return "SHOPPING BILL"
         elif self.type == TYPE_EMOJI:
             # TODO add emoji name
             return self.content
-        elif self.type == TYPE_REDENVELOPE:
-            pq = PyQuery(self.content_xml_ready, parser='xml')
-
-            title = pq('sendertitle').text()
-            return u"[RED ENVELOPE]\n{}".format(title)
+        # elif self.type == TYPE_REDENVELOPE:
+        #     pq = PyQuery(self.content_xml_ready, parser='xml')
+        #     print "AAAAAAAAAA"
+        #     print pq
+        #     title = pq('sendertitle').text()
+        #     return u"[RED ENVELOPE]\n{}SHIIIIIT".format(title)
         else:
             # TODO replace smiley with text
             return self.content
@@ -136,4 +140,3 @@ class WeChatMsg(object):
         if not emoji:
             return None
         return emoji.attrs['productid']
-

@@ -124,10 +124,43 @@ pip install --user --pre pysox
 
     Check `./dump-html.py -h` for using different paths.
 
+#### Something more
+
++ install [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
++ install [python-pdfkit](https://pypi.python.org/pypi/pdfkit)
++ If you want to export all your chats to html file, please run     `dump-all-html.py`.
++ If you want to exoprt all your chats as PDF file, do these steps as follows:
+    + Convert origin HTML files to print-optimized one via:
+        ``` sh
+        python processHTMLtoPrint.py
+        ```
+    + setup a web server
+      + Please install
+        + node js
+        + npm
+        + http-server:
+            ``` sh
+            npm install http-server -g
+            ```
+        + cd to /cover
+        + run
+            ```
+            http-server
+            ```
+      > This is basically set up for generating covers of PDF files.
+
+    + Optional
+        + I think it's better to use bigger font size for printing, so set
+`font-size: 22px;` in `wechat\static\wx.css` line 1344. And regenerate the HTML files(Make sure backup first). 
+    + Open another terminal, run `python dump-pdf.py`
+
+
 ### Examples:
 Screenshots of generated html:
 
 ![byvoid](https://github.com/ppwwyyxx/wechat-dump/raw/master/screenshots/byvoid.jpg)
+![pdf_1](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_1.png)
+![pdf_2](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_2.png)
 
 See [here](http://ppwwyyxx.com/static/wechat/example.html) for an example html.
 

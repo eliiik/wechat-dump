@@ -140,7 +140,7 @@ body {
   height: 100%;
   background: #4e5359 repeat 0 0;
   color: #666;
-  font: 14px/1.5 Helvetica, Arial, Tahoma;
+  font: 18px/1.5 Helvetica, Arial, Tahoma;
   text-align: center;
 }
 body {
@@ -353,7 +353,7 @@ a:active {
 }
 .chatPanel .media .mediaFooter a {
   color: #792F2E;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0px 7px;
 }
 .chatPanel .media .mediaFooter .mesgIcon {
@@ -585,7 +585,7 @@ a.ico_close_circle_blue:hover {
   padding: 20px 0;
   text-align: center;
   line-height: 30px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .dialog .dialogContent .inputVerify {
   padding: 3px 5px;
@@ -641,7 +641,7 @@ a.ico_close_circle_blue:hover {
   display: block;
   height: 30px;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   text-shadow: none;
   text-align: center;
@@ -905,7 +905,7 @@ a.btnSecondary:active {
   display: block;
   color: #fff;
   text-shadow: none;
-  font-size: 14px;
+  font-size: 18px;
   max-width: 113px;
   overflow: hidden;
   word-wrap: normal;
@@ -1271,7 +1271,7 @@ a.btnSecondary:active {
   -o-text-overflow: ellipsis;
   overflow: hidden;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'å¾®è½¯é›…é»‘';
   color: #fff;
   text-shadow: none;
@@ -1341,7 +1341,7 @@ a.btnSecondary:active {
   text-align: left;
   /*padding:2px; line-height:1.2; */
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18px;
   min-height: 20px;
   word-wrap: break-word;
 }

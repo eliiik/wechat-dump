@@ -8,11 +8,13 @@ from wechat.parser import WeChatDBParser
 from common.textutil import safe_filename
 import sys, os
 
-if len(sys.argv) != 3:
-    sys.exit("Usage: {0} <path to decrypted_database.db> <output_dir>".format(sys.argv[0]))
+# if len(sys.argv) != 3:
+#     sys.exit("Usage: {0} <path to decrypted_database.db> <output_dir>".format(sys.argv[0]))
 
-db_file = sys.argv[1]
-output_dir = sys.argv[2]
+# db_file = sys.argv[1]
+# output_dir = sys.argv[2]
+db_file = "./decrypted.db"
+output_dir = "./output/"
 try:
     os.mkdir(output_dir)
 except:

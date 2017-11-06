@@ -24,14 +24,13 @@ def get_args():
 
 if __name__ == '__main__':
     args = get_args()
-
     name = ensure_unicode(args.name)
     output_file = args.output
-
     parser = WeChatDBParser(args.db)
 
     try:
-        chatid = parser.get_id_by_nickname(name)
+        #chatid = parser.get_id_by_nickname(name)
+        chatid = name
     except KeyError:
         sys.stderr.write(u"Valid Contacts: {}\n".format(
             u'\n'.join(parser.all_chat_nicknames)))
