@@ -159,8 +159,15 @@ pip install --user --pre pysox
 Screenshots of generated html:
 
 ![byvoid](https://github.com/ppwwyyxx/wechat-dump/raw/master/screenshots/byvoid.jpg)
-![pdf_1](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_1.png)
-![pdf_2](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_2.png)
+
+Screenshots of generated PDF:
++ Cover && Contents
+
+    ![pdf_1](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_1.png)
+
++ Chats
+
+    ![pdf_2](https://github.com/eliiik/wechat-dump/raw/master/screenshots/wechat_pdf_screenshot_2.png)
 
 See [here](http://ppwwyyxx.com/static/wechat/example.html) for an example html.
 
